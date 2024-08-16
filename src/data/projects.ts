@@ -20,11 +20,10 @@ const projects: Project[] = [
   },
 
   {
-    title: "Trivium",
-    techs: ["Python", "Tkinter", "MITES Course Project"],
-    link: "https://github.com/ssszlma/trivium",
+    title: "Flutter Starter (Template)",
+    techs: ["Flutter", "Dart", "App Development"],
+    link: "https://github.com/ssszlma/flutter_starter",
   },
-
 
   {
     title: "A Crisis In Boston",
@@ -33,9 +32,9 @@ const projects: Project[] = [
   },
 
   {
-    title: "Flutter Starter (Template)",
-    techs: ["Flutter", "Dart", "App Development"],
-    link: "https://github.com/ssszlma/flutter_starter",
+    title: "Trivium",
+    techs: ["Python", "Tkinter", "MITES Course Project"],
+    link: "https://github.com/ssszlma/trivium",
   },
 
   {
