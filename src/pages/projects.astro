@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import projects from "@/data/projects";
 
+
 ---
 
 <Layout>
@@ -21,11 +22,6 @@ import projects from "@/data/projects";
 
 
     <article class="flex flex-col gap-6">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
-          Here are some project I've worked on before .ᐟ
-        </h3>
-      </header>
       {projects.length === 0 && <p>lo</p>}
 
       <section class="flex flex-col gap-4">
@@ -35,6 +31,8 @@ import projects from "@/data/projects";
         }
       </section>
     </article>
+
+
 
   </main>
 </Layout>
