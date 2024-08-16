@@ -18,7 +18,7 @@ const presentation: Presentation = {
       + " I build things like **Apps**, **APIs**, and projects on the web like [**this site**](\"https/salmaj.me/\"). I've also competed at several **hackathons** and built things like [**this**](\"https://github.com/ssszlma/TTT_Betting\") Web3 dApp."
       + " I also enjoy hurting my brain with **Competitive Programming** problems (I especially recommend [**Project Euler!**.)](\"https://projecteuler.net\")"
       + " Outside of the technical world I'm also part of my school's Debate team and enjoy designing clothes!"
-      + "<br><br>I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup as an **App Developer**."
+      + "<br><br>I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup, as an **App Developer**."
       + "<br><br>Check out **[/projects](\"https://salmaj.me/projects\")** or my GitHub [(@**ssszlma**)](\"https://github.com/ssszlma\") for more of my projects!  ◡̈",
 
   socials: [
