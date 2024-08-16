@@ -19,7 +19,7 @@ const presentation: Presentation = {
       + " I also enjoy hurting my brain with **Competitive Programming** problems (I especially recommend [**Project Euler!**.)](\"https://projecteuler.net\")"
       + " Outside of the technical world I'm also part of my school's Debate team and enjoy designing clothes!"
       + "<br><br>I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup, as an **App Developer**."
-      + "<br><br>Lastly, feel free to check out **[/projects](\"https://salmaj.me/projects\")** or my GitHub [(@**ssszlma**)](\"https://github.com/ssszlma\") for more of my projects!",
+      + "<br><br>Lastly, feel free to check out **[/projects](\"https://salmaj.me/projects\")** or my [Github](\"https://github.com/ssszlma\") for more of my projects!",
 
   socials: [
     {
