@@ -6,27 +6,73 @@ export type Project = {
 };
 
 const projects: Project[] = [
+
   {
-    title: "Puppetfactory",
-    techs: ["Next.js", "TypeScript"],
-    link: "https://puppetfactory.app/",
+    title: "TTT",
+    techs: ["Blockchain", "Polkadot.js", "EasyA x Harvard hackathon runner-up"],
+    link: "https://github.com/ssszlma/TTT_Betting",
   },
+
   {
-    title: "Script to generate Next.js project",
-    techs: ["Shell"],
-    link: "https://github.com/MaeWolff/create-nextjs-app-bash-script",
+    title: "Self-Parking Robot",
+    techs: ["Python", "Algorithms", "MITES Course Project"],
+    link: "",
   },
+
   {
-    title: "Dictionary App",
-    techs: ["Next.js", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    title: "Trivium",
+    techs: ["Python", "Tkinter", "MITES Course Project"],
+    link: "https://github.com/ssszlma/trivium",
   },
+
+
   {
-    title: "Portfolio / Template",
-    techs: ["Astro", "TypeScript"],
-    link: "https://github.com/MaeWolff/astro-portfolio-template",
-    isComingSoon: true,
+    title: "A Crisis In Boston",
+    techs: ["Unity", "CSharp", "Game Development"],
+    link: "https://github.com/ssszlma/aCrisisInBoston",
   },
+
+  {
+    title: "Flutter Starter (Template)",
+    techs: ["Flutter", "Dart", "App Development"],
+    link: "https://github.com/ssszlma/flutter_starter",
+  },
+
+  {
+    title: "Workplace",
+    techs: ["HTML/CSS/JS", "Web Development", "Hackathon Submission (MIT Blueprint)"],
+    link: "https://github.com/ssszlma/workplace",
+  },
+
+  {
+    title: "MolGCalculator",
+    techs: ["C++", "Algorithms", "Chemistry"],
+    link: "https://github.com/ssszlma/molgcalculator",
+  },
+
+  {
+    title: "Geographer",
+    techs: ["Python", "Matplotlib", "Competitive Programming"],
+    link: "https://github.com/ssszlma/geographer",
+  },
+
+  {
+    title: "SkinCheck",
+    techs: ["App Inventor", "Artifical Intelligence"],
+    link: "https://github.com/ssszlma/skincheck",
+  },
+
+  {
+    title: "Jas",
+    techs: ["Python", "Discord Bot"],
+    link: "https://github.com/ssszlma/Jas.",
+  },
+
+
+
+
+
+
 ];
 
 export default projects;

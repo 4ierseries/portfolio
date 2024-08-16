@@ -4,7 +4,7 @@ type Social = {
 };
 
 type Presentation = {
-  mail: string;
+  // mail: string;
   title: string;
   description: string;
   socials: Social[];
@@ -12,23 +12,23 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "maxencewolff.pro@gmail.com",
-  title: "Hi, I’m Maxence 👋",
-  // profile: "/profile.webp",
+  title: "Salma J.",
   description:
-    "Bonjour, i'm a *french frontend developer* with over *3 years* of web experience. I am currently working with *NextJS and Typescript*. Outside of work I complete my pokemon card collection and learning TypeScript.",
+        "Welcome to my website! I'm Salma, a rising junior at Boston Collegiate Charter School."
+      + " I build things like **Apps**, **APIs**, and projects on the web like [**this site**](\"https/salmaj.me/\"). I've also competed at several **hackathons** and built things like [**this**](\"https://github.com/ssszlma/TTT_Betting\") Web3 dApp."
+      + " I also enjoy hurting my brain with **Competitive Programming** problems (I especially recommend [**Project Euler**)](\"https://projecteuler.net\")"
+      + " Outside of the technical world I'm also part of my school's Debate team and enjoy designing clothes!"
+      + "<br><br>I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup as an **App Developer**."
+      + "<br><br>Check out **[/projects](\"https://salmaj.me/projects\")** or my GitHub [(@**ssszlma**)](\"https://github.com/ssszlma\") for more of my projects!  ◡̈",
+
   socials: [
     {
-      label: "X",
-      link: "https://twitter.com/itsstormzz_",
-    },
-    {
-      label: "Bento",
-      link: "https://bento.me/m-wolff",
-    },
-    {
       label: "Github",
-      link: "https://github.com/MaeWolff",
+      link: "https://github.com/ssszlma",
+    },
+    {
+      label: "Email",
+      link: "mailto:salma0aj@gmail.com",
     },
   ],
 };
