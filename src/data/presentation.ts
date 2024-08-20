@@ -14,12 +14,11 @@ type Presentation = {
 const presentation: Presentation = {
   title: "Salma J.",
   description:
-        "Welcome to my website! I'm Salma, a rising junior at Boston Collegiate Charter School."
-      + " I build things like **Apps**, **Games**, and projects on the web like [**this site**](\"/\"). I've also competed at several **hackathons** and built things like [**this**](\"https://github.com/ssszlma/TTT_Betting\") Web3 dApp."
-      + " I also enjoy hurting my brain with **Competitive Programming** problems (I especially recommend [**Project Euler!**.)](\"https://projecteuler.net\")"
+      "Hello! I'm Salma, a rising junior at Boston Collegiate Charter School."
+      + " I build things like **Apps**, **Games**, and projects on the web like [**-this site-**](\"\/\"). I've also competed at several Hackathons and enjoy hurting my brain with Competitive Programming problems."
       + " Outside of the technical world I'm also part of my school's Debate team and enjoy designing clothes!"
-      + "<br><br>I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup, as an **App Developer**."
-      + "<br><br>Lastly, feel free to check out **[/projects](\"https://salmaj.me/projects\")** or my [Github](\"https://github.com/ssszlma\") for more of my projects!",
+      + "<br><br> **➜**  I'm currently interning at [**Kidogo Productions**](\"https://www.kidogoproductions.com\"), a local startup, as an **App Developer**."
+      + "<br><br> **➜**  Check out **[/-projects-](\"https://salmaj.me/projects\")** or my GitHub [(@-**ssszlma**-)](\"https://github.com/ssszlma\").",
 
   socials: [
     {
