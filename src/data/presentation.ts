@@ -27,7 +27,11 @@ const presentation: Presentation = {
     },
     {
       label: "Email",
-      link: "mailto:salma0aj@gmail.com",
+      link: "mailto:salmaabdijama@gmail.com",
+    },
+    {
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/salmaaj/",
     },
   ],
 };
