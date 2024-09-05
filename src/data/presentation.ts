@@ -25,12 +25,12 @@ const presentation: Presentation = {
       link: "https://github.com/ssszlma",
     },
     {
-      label: "Email",
-      link: "mailto:salmaabdijama@gmail.com",
-    },
-    {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/salmaaj/",
+    },
+    {
+      label: "Email",
+      link: "mailto:salmaabdijama@gmail.com",
     },
   ],
 };
