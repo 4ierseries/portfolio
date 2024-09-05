@@ -44,12 +44,6 @@ const projects: Project[] = [
   },
 
   {
-    title: "MolGCalculator",
-    techs: ["C++", "Algorithms", "Chemistry"],
-    link: "https://github.com/ssszlma/molgcalculator",
-  },
-
-  {
     title: "Geographer",
     techs: ["Python", "Matplotlib", "Competitive Programming"],
     link: "https://github.com/ssszlma/geographer",
@@ -59,12 +53,6 @@ const projects: Project[] = [
     title: "SkinCheck",
     techs: ["App Inventor", "Artifical Intelligence"],
     link: "https://github.com/ssszlma/skincheck",
-  },
-
-  {
-    title: "Jas",
-    techs: ["Python", "Discord Bot"],
-    link: "https://github.com/ssszlma/Jas.",
   },
 
 
