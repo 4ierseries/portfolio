@@ -17,7 +17,7 @@ const presentation: Presentation = {
       "Hello! I'm Salma, a junior at Boston Collegiate Charter School."
       + " I build things like **Apps**, **Games**, and projects on the **Web**!. I've also competed at several Hackathons and enjoy hurting my brain with Competitive Programming."
       + " Outside of the technical world I'm also part of my school's Debate team and enjoy designing clothes!"
-      + "<br><br> ➜  I'm currently working as a **Software Engineer** at [**Kidogo Productions**](\"https://www.kidogoproductions.com\") and as a **Youth Councilor** for the [**MYC**](\"https://www.boston.gov/departments/youth-engagement-and-advancement/mayors-youth-council\")."
+      + "<br><br> ➜  I'm currently working as a **Software Engineer** at [**Kidogo Productions**](\"https://www.kidogoproductions.com\") and as a **Youth Councilor** for the  [**MYC**](\"https://www.boston.gov/departments/youth-engagement-and-advancement/mayors-youth-council\\")."
       + "<br><br> ➜  Check out **[/projects](\"https://salmaj.me/projects\")** or my GitHub [(@**ssszlma**)](\"https://github.com/ssszlma\").",
 
   socials: [
