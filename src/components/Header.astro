@@ -7,7 +7,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 
 <header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
 
-  <a href="https://salmaj.me/"> ౨ৎ </a>
+  <a href="/"> ౨ৎ </a>
 
   <nav role="navigation">
     <ul role="list" class="flex flex-row gap-2">
@@ -20,25 +20,20 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
           }}>home</a
         >
       </li>
-      <!-- <li>/</li>
-      <li>
-        <a
-          href="/posts"
-          class:list={{
-            ["hover:text-neutral-100 fancy"]: true,
-            ["text-neutral-100 fancy"]: pathname === "/posts",
-          }}>posts</a
-        >
-      </li> -->
-      <li>/</li>
-      <li>
-        <a
-            href="/projects"
-            class:list={{
-              ["hover:text-neutral-100 fancy"]: true,
-              ["text-neutral-100 fancy"]: pathname === "/projects",
-            }}>projects</a
-        >
+
+        <li>/</li>
+
+        <li>
+            <a
+                    href="/projects"
+                    class:list={{
+                        ["hover:text-neutral-100 fancy"]: true,
+                        ["text-neutral-100 fancy"]: pathname === "/projects",
+                    }}>projects</a
+            >
+        </li>
+
+
     </ul>
   </nav>
 </header>

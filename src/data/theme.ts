@@ -9,8 +9,8 @@ type Theme = {
 
 const theme: Theme = {
   colors: {
-    primary: "emerald",
-    secondary: "green",
+    primary: "pink",
+    secondary: "pink",
   },
 };
 

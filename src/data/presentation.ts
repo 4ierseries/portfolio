@@ -14,14 +14,19 @@ type Presentation = {
 const presentation: Presentation = {
   title: "Salma J.",
   description:
-      "Hello! I'm Salma, a junior at Boston Collegiate Charter School."
-      + " I build things like **Apps**, **Games**, and projects on the **Web**."
-      + "<br><br> ▪  Currently working as a **Software Engineer** at [**Kidogo Productions**](\"https://www.kidogoproductions.com\").",
+      "I'm Salma, a junior at Boston Collegiate Charter School."
+      + " I have a wide variety of interests, ranging from programming, math, and physics to public policy and debate."
+      + " I'm interested in pursuing **optical engineering** and have a deep love for astrophysics! "
+      + "<br><br> I'm currently working as a **Software Engineer** at [Kidogo Productions](\"https://www.kidogoproductions.com\"), and as a **Youth Councilor** for the [Boston Mayor's Youth Council.](\"https://bit.ly/mycboston\")",
+
+
+
+
 
   socials: [
     {
       label: "Github",
-      link: "https://github.com/ssszlma",
+      link: "https://github.com/4ierseries",
     },
     {
       label: "LinkedIn",
