@@ -27,7 +27,7 @@ const projects: Project[] = [
 
   {
     title: "Michelson Interferometer",
-    description: "Worked on a Michelson interferometer, and presented its technical functionality and the underlying scientific principles at a final symposium to an audience with no background in the subject.",
+    description: "Worked on a Michelson interferometer, and presented its technical functionality and the underlying scientific principles at a final symposium.",
     techs: ["Optics", "Physics"],
   },
 
