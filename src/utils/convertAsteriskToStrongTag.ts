@@ -10,7 +10,7 @@ export default function convertTextToHtml(str: string): string {
       /\[([^\]]+)\]\("([^"]+)"\)/g,
       (match, text, link) => {
         const colorClass = 'text-blue-400'; // Set to a fixed red color
-        return `<a href="${link}" class="italic ${colorClass}">${text}</a>`;
+        return `<a href="${link}" class="${colorClass}">${text}</a>`;
       }
   );
 
