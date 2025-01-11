@@ -33,6 +33,18 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
             >
         </li>
 
+<li>/</li>
+
+<li>
+            <a
+                    href="/cv"
+                    class:list={{
+                        ["hover:text-neutral-100 fancy"]: true,
+                        ["text-neutral-100 fancy"]: pathname === "https://read.cv/ssszlma",
+                    }}>cv</a
+            >
+        </li>
+
 
     </ul>
   </nav>
