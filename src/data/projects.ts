@@ -7,57 +7,64 @@ export type Project = {
   hasLink?: boolean; // Optional boolean to control the display of the link and SVG
 };
 
-
 const projects: Project[] = [
-
   {
     title: "TTT",
-    description: "A Web3 GameFi betting platform powered by blockchain technology and smart contracts.",
-    techs: ["Blockchain", "Polkadot.js", "EasyA x Harvard hackathon runner-up"],
+    description: "A Web3 GameFi betting platform powered by blockchain technology and smart contracts, allowing users to bet cryptocurrency in games. Won the finalist position at the EasyA x Polkadot Harvard Hackathon.",
+    techs: ["Blockchain", "Polkadot.js", "Smart Contracts"],
     link: "https://github.com/ssszlma/TTT_Betting",
     hasLink: true,
   },
 
   {
+    title: "3D Galaxy Mapper",
+    description: "Built a 3D interactive galaxy mapping web app using Flask, visualizing astronomical data from galaxies' redshift and coordinates. Integrated Hubble’s Law to calculate galaxy distances and used Plotly for interactive data visualization.",
+    techs: ["Python", "Flask", "Plotly", "Astrophysics"],
+    link: "",
+    hasLink: false,
+  },
+
+  {
     title: "Self-Parking Robot Algorithm",
-    description: "An algorithm to process LiDAR data and enable autonomous parking for the MIT RACECAR.",
-    techs: ["Python", "Algorithms"],
+    description: "Developed an algorithm to process LiDAR data for autonomous parking functionality, using proportional and proportional-derivative control methods for optimal performance.",
+    techs: ["Python", "Algorithms", "LiDAR"],
     hasLink: false,
   },
 
   {
     title: "Michelson Interferometer",
-    description: "Worked on a Michelson interferometer, and presented its technical functionality and the underlying scientific principles at a final symposium.",
-    techs: ["Optics", "Physics"],
+    description: "Collaborated with a team to design and construct a Michelson Interferometer, analyzing interference patterns to validate theoretical predictions. Presented findings at a symposium, demonstrating the device's functionality and scientific principles.",
+    techs: ["Optics", "Physics", "Engineering"],
+    hasLink: false,
   },
 
   {
     title: "Youth Speaks Boston Survey",
-    description: "Beta tested the Youth Speaks Boston needs assessment survey, providing feedback that led to improvements, including the implementation of the new translation feature.",
-    techs: ["Non-technical"],
+    description: "Beta tested the Youth Speaks Boston needs assessment survey, providing feedback that led to improvements, including the implementation of a translation feature to increase accessibility.",
+    techs: ["Non-technical", "Community Engagement"],
     link: "https://www.boston.gov/departments/youth-engagement-and-advancement/youth-speaks-boston",
     hasLink: true,
   },
 
   {
     title: "Kidogoville",
-    description: "An open-world children's app aiming to diversify EdTech by including a focus on black culture and a variety of ethnic characters.",
-    techs: ["Typescript", "React", "Ionic"],
+    description: "Redesigned the UI of Kidogoville, an open-world children's app, using the Ionic framework to enhance performance and user experience. Integrated Firebase for seamless data storage and image management.",
+    techs: ["Typescript", "React", "Ionic", "Firebase"],
     link: "https://kidogoville.com",
     hasLink: true,
   },
 
   {
     title: "Workplace",
-    description: "A drag 'n drop website builder which generates accurate HTML and CSS code.",
-    techs: ["HTML/CSS/JS", "Web Development", "MIT Blueprint Hackathon Submission"],
+    description: "Developed a drag-and-drop website builder that generates accurate HTML and CSS code, featuring a user-friendly interface similar to Carrd. Submitted to the MIT Blueprint Hackathon.",
+    techs: ["HTML/CSS/JS", "Web Development", "MIT Blueprint Hackathon"],
     link: "https://github.com/ssszlma/workplace",
     hasLink: true,
   },
 
   {
     title: "Flutter Starter (Template)",
-    description: "A simple template with set up navigation, pages and components.",
+    description: "Created a simple Flutter template with pre-configured navigation, pages, and components to streamline app development.",
     techs: ["Flutter", "Dart", "App Development"],
     link: "https://github.com/ssszlma/flutter_starter",
     hasLink: true,
@@ -65,15 +72,15 @@ const projects: Project[] = [
 
   {
     title: "SkinCheck",
-    description: "A skin disease detection app powered by a trained AI model and GPT-3.5, providing users with condition information and a feature to find nearby dermatologists.",
-    techs: ["App Inventor", "Artifical Intelligence", "MIT Futuremakers Summer Program"],
+    description: "Developed a mobile app that uses AI image classification to identify skin conditions, provide information, and locate nearby dermatologists. Awarded for outstanding engagement at the MIT FutureMakers program.",
+    techs: ["App Inventor", "Artificial Intelligence", "MIT FutureMakers"],
     link: "https://github.com/ssszlma/skincheck",
     hasLink: true,
   },
 
   {
     title: "USACO Guide",
-    description: "Contributed to the Game Theory module.",
+    description: "Contributed to the Game Theory module of the USACO Guide, a resource for competitive programming students.",
     techs: ["Contributor", "React", "Typescript"],
     link: "https://usaco.guide/dashboard/",
     hasLink: true,
@@ -81,7 +88,7 @@ const projects: Project[] = [
 
   {
     title: "A Crisis In Boston",
-    description: "A 2D platformer built in Unity during the Boston Cyberarts summer game development internship.",
+    description: "A 2D platformer game built in Unity during the Boston Cyberarts summer game development internship, showcasing skills in game design and C# programming.",
     techs: ["Unity", "C#", "Game Development"],
     link: "https://github.com/ssszlma/aCrisisInBoston",
     hasLink: true,
@@ -89,33 +96,19 @@ const projects: Project[] = [
 
   {
     title: "Trivium",
-    description: "A trivia game built in python using the Tkinter UI Library.",
+    description: "A trivia game built in Python using the Tkinter UI library, featuring an algorithm to track and score user inputs.",
     techs: ["Python", "Tkinter"],
     link: "https://github.com/ssszlma/trivium",
     hasLink: true,
   },
 
-
   {
     title: "Geographer",
-    description: "A geometric shape visualizer and calculator built to solve geometry-related competitive programming problems.",
+    description: "A geometric shape visualizer and calculator designed to solve geometry-related competitive programming problems, built using Python and Matplotlib.",
     techs: ["Python", "Matplotlib", "Competitive Programming"],
     link: "https://github.com/ssszlma/geographer",
     hasLink: true,
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 export default projects;
