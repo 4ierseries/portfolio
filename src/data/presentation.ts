@@ -16,7 +16,7 @@ const presentation: Presentation = {
     description:
       "I'm Salma, a junior at Boston Collegiate Charter School."
       + " I have a wide variety of interests, ranging from programming, math, and physics to public policy and debate."
-      + " I'm interested in Photonics and Astrophysics! "
+      + " More specifically, I'm interested in Photonics and Gravitational waves! "
       + "<br><br> I'm currently working as a **Software Developer** at [Kidogo Productions](\"https://www.kidogoproductions.com\"), and as a **Youth Councilor** for the [Boston Mayor's Youth Council.](\"https://bit.ly/mycboston\")"
   + "<br><br> <em>This site is currently under construction as I work on updates.</em> ",
 
