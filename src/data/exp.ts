@@ -3,30 +3,30 @@ interface Experience {
   role: string;
   organization: string;
   year: string;
-  //type?: string;
+  type?: string;
 }
 
 export const experiences: Experience[] = [
   {
-    //type: "Research",
+    type: "Research",
     role: "Upcoming Astrophysics Research Internship",
     organization: "Harvard-Smithsonian Center for Astrophysics",
     year: "Spring 2025"
   },
   {
-    //type: "Work",
+    type: "Programming",
     role: "Software Developer",
     organization: "Kidogo Productions",
     year: "Summer 2024 - now"
   },
   {
-    //type: "Internship",
-    role: "Game Development Intern",
-    organization: "Boston Cyberarts",
-    year: "Summer 2024"
+    type: "Policy",
+    role: "Youth Councilor",
+    organization: "Mayor's Youth Council Boston",
+    year: "December 2024 - now"
   },
   {
-    //type: "Extracurricular",
+    type: "Math",
     role: "Menezes Challenge PRIMES Circle",
     organization: "MIT",
     year: "December 2024 - now"
