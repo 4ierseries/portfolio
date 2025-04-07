@@ -22,8 +22,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
   <main class="flex flex-col gap-12">
     <article class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12">
       <div class="flex flex-col gap-8">
-        <h1 class="fancy text-4xl text-neutral-100"> {presentation.title} </h1>
-        <h2 class="w-auto leading-6 text-base" set:html={convertAsteriskToStrongTag(presentation.description)} />
+        <h1 class="fancy text-3xl text-neutral-100"> {presentation.title} </h1>
+        <h2 class="w-auto leading-6 text" set:html={convertAsteriskToStrongTag(presentation.description)} />
         <SocialLinks />
       </div>
     </article>
