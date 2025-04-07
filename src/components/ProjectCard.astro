@@ -3,75 +3,27 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, isComingSoon, description, hasLink } = Astro.props;
-
-const formatTechs = (values: string[]) =>
-    values.toString().replaceAll(",", " • ");
+const { title, techs, link, description, hasLink } = Astro.props;
+const formatTechs = (values: string[]) => values.toString().replaceAll(",", " • ");
 ---
 
-<>
-    {
-        isComingSoon && (
-                    <div class="t group flex w-full flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4">
-                        <div class="flex flex-col gap-2">
-                            <p class="fancy text-lg font-bold text-neutral-100">{title}</p>
-                            {description && <p class="text-sm text-neutral-400">{description}</p>}
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <p class="text-xs text-neutral-500">{formatTechs(techs)}</p>
-                            <p class="w-fit rounded-md bg-neutral-900 px-4 py-1 text-sm text-neutral-100">Soon</p>
-                        </div>
-                    </div>
-        )
-    }
-
-    {
-        !isComingSoon && (
-            hasLink && link ? (
-                            <a
-                                    href={link}
-                                    target="_blank"
-                                    class="group flex w-full flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"
-                            >
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-lg font-bold text-neutral-100">{title}</p>
-                                    {description && <p class="text-sm text-neutral-400">{description}</p>}
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-neutral-500">{formatTechs(techs)}</p>
-                                    <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            class="transition-all duration-300 group-hover:translate-x-1"
-                                    >
-                                        <path
-                                                d="M5.25 12.75L12.75 5.25"
-                                                stroke="#999999"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
-                                        <path
-                                                d="M5.25 5.25H12.75V12.75"
-                                                stroke="#999999"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                            </a>
-            ) : (
-                            <div class="group flex w-full flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4">
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-lg font-bold text-neutral-100">{title}</p>
-                                    {description && <p class="text-sm text-neutral-400">{description}</p>}
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-neutral-500">{formatTechs(techs)}</p>
-                                </div>
-                            </div>
-            )
-        )
-    }
-</>
+<article class="group my-3">
+    {hasLink && link ? (
+            <a
+                    href={link}
+                    target="_blank"
+                    class="block hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300"
+                    rel="noopener noreferrer"
+            >
+                <h3 class="text-lg font-medium">{title}</h3>
+                {description && <p class="text-sm mt-2 text-neutral-400">{description}</p>}
+                <p class="text-xs text-neutral-500 mt-1">{formatTechs(techs)} ↗</p>
+            </a>
+        ) : (
+        <div class="hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300">
+            <h3 class="text-lg font-medium">{title}</h3>
+            {description && <p class="text-sm mt-2 text-neutral-400">{description}</p>}
+            <p class="text-xs text-neutral-500 mt-1">{formatTechs(techs)}</p>
+        </div>
+        )}
+        </article>

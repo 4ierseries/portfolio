@@ -1,0 +1,47 @@
+---
+interface Experience {
+    role: string;
+    organization: string;
+    year: string;
+    type?: string;
+}
+
+const { role, organization, year, type } = Astro.props;
+---
+
+<style>
+    .exp-item {
+        position: relative;
+        transition: all 0.3s ease;
+        padding: 0.5rem 0;
+    }
+
+    .exp-item:hover {
+        color: #9750d7;
+    }
+
+    .exp-type {
+        font-size: 0.65rem;
+        color: #737373;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.1rem;
+    }
+
+    .exp-org {
+        color: #a3a3a3;
+        font-size: 0.7rem;
+    }
+
+    .exp-year {
+        color: #737373;
+        font-size: 0.8rem;
+    }
+</style>
+
+<div class="exp-item">
+    {type && <div class="exp-type">{type}</div>}
+    <div class="font-medium">{role}</div>
+    {organization && <div class="exp-org">{organization}</div>}
+    <div class="exp-year">{year}</div>
+</div>

@@ -4,71 +4,88 @@ import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
+import Exp from "@/components/exp.astro";
 import Link from "@/components/shared/Link.astro";
+import Footer from "@/components/shared/footer.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import { experiences, moreInfo } from "@/data/exp";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
 
+<!-- main area. name, bio, social links -->
 <Layout>
-  <main class="flex flex-col gap-20">
-
-
+  <main class="flex flex-col gap-12">
     <article class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12">
-
       <div class="flex flex-col gap-8">
-
-          <h1 class="fancy text-3xl text-neutral-100"> {presentation.title} </h1>
-          <h2  class="w-auto leading-6" set:html={convertAsteriskToStrongTag(presentation.description)} />
-          <SocialLinks />
-
+        <h1 class="fancy text-4xl text-neutral-100"> {presentation.title} </h1>
+        <h2 class="w-auto leading-6 text-base" set:html={convertAsteriskToStrongTag(presentation.description)} />
+        <SocialLinks />
       </div>
-
     </article>
 
-    <article class="flex flex-col gap-8">
-
+    <article class="flex flex-col gap-5">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="fancy text-lg text-neutral-100"> projects </h3>
+        <h3 class="fancy text-2xl text-neutral-100">Experience</h3>
+      </header>
+      <section class="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2">
+        {experiences.map((exp) => <Exp {...exp} />)}
+      </section>
+      <!-- <div class="w-auto leading-6 text-base" set:html={convertAsteriskToStrongTag(moreInfo)} /> -->
+    </article>
+
+
+<!--
+    <article class="flex flex-col gap-5">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="fancy text-lg text-neutral-100">Experience</h3>
+      </header>
+      <section class="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2">
+        {experiences.map((exp) => <Exp {...exp} />)}
+      </section>
+      <h3 class="text-lg text-neutral-100">For more of my work, check out my resume.</h3>
+      <h2 class="w-auto leading-6 text-base" set:html={convertAsteriskToStrongTag(experience.moreinfo)} />
+    </article> -->
+
+    <!-- projects. -->
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="fancy text-2xl text-neutral-100">Projects</h3>
         <Link href="/projects" label="See all projects" isUnderline target="_self" />
       </header>
-
-      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
-
+      {projects.length === 0 && <p></p>}
       <section class="flex flex-col gap-4">
-        { projects.length !== 0 &&  projects.slice(0, 3).map((project) => <ProjectCard {...project} />) }
+        {projects.length !== 0 && projects.slice(0, 3).map((project) => <ProjectCard {...project} />)}
       </section>
-
     </article>
 
+
+    <!-- blogs. idk if ill ever get to writing these.
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="fancy text-lg text-neutral-100"> blog posts</h3>
+        <h3 class="fancy text-lg text-neutral-100">blog posts</h3>
         <Link href="/posts" label="See all posts" isUnderline target="_self" />
       </header>
-      {posts.length === 0 && <p>Soon, stay tuned!</p>}
-
+      {posts.length === 0 && <p>Soon (?) :</p>}
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
-        {
-            posts.length !== 0 &&
-            posts
-                .slice(0, 2)
-                .map((post) => (
-                    <PostCard
-                        publishedAt={post.data.publishedAt}
-                        title={post.data.title}
-                        description={post.data.description}
-                        slug={post.slug}
-                    />
-                ))
+        {posts.length !== 0 && posts
+            .slice(0, 2)
+            .map((post) => (
+                <PostCard
+                    publishedAt={post.data.publishedAt}
+                    title={post.data.title}
+                    description={post.data.description}
+                    slug={post.slug}
+                />
+            ))
         }
       </section>
     </article>
-
-
+    -->
+    </Footer>
   </main>
 </Layout>

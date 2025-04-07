@@ -70,4 +70,15 @@ body {
   font-family: 'Noticia Text', sans-serif;
   font-weight: bold;
 }
+:root {
+  --bg: #0a0a0a;       /* Rich black */
+  --text: #fafafa;     /* Pure white */
+  --primary: #8b5cf6;  /* Vibrant purple */
+  --secondary: #3b0764;/* Deep purple */
+  --muted: #a3a3a3;    /* Gray for less important text */
+}
 
+/* global.css */
+a, .hover-transition {
+  transition: color 300ms ease;
+}

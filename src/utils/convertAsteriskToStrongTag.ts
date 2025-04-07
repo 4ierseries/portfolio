@@ -1,16 +1,17 @@
 export default function convertTextToHtml(str: string): string {
-  str = str.replace(
-      /\*\*([^\*]+)\*\*/g,
-      `<span class="text-white">$1</span>`
-  );
+    // Handle bold text
+    str = str.replace(
+        /\*\*([^\*]+)\*\*/g,
+        `<span style="color: #9750d7; font-weight: 600">$1</span>`
+    );
 
-  str = str.replace(
-      /\[([^\]]+)\]\("([^"]+)"\)/g,
-      (match, text, link) => {
-        const colorClass = 'text-blue-400'; 
-        return `<a href="${link}" class="${colorClass}">${text}</a>`;
-      }
-  );
+    // Handle links - fixed regex
+    str = str.replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        (match, text, link) => {
+            return `<a href="${link}" target=_blank style="color: #9750d7; text-decoration: underline">${text}</a>`;
+        }
+    );
 
-  return str;
+    return str;
 }
