@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
     type: "Policy",
     role: "Youth Councilor",
     organization: "Mayor's Youth Council Boston",
-    year: "December 2024 - June 2025"
+    year: "September 2024 - June 2025"
   },
   {
     type: "Math",
