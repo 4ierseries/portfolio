@@ -9,30 +9,26 @@ interface Experience {
 export const experiences: Experience[] = [
   {
     type: "Research",
-    role: "Upcoming Astrophysics Research Internship",
+    role: "Astrophysics Research Internship",
     organization: "Harvard-Smithsonian Center for Astrophysics",
     year: "Spring 2025"
   },
   {
-    type: "Programming",
-    role: "Software Developer",
-    organization: "Kidogo Productions",
-    year: "Summer 2024 - now"
+    type: "Research",
+    role: "SSP Astrophysics @ Colby College",
+    organization: "The Summer Science Program",
+    year: "Summer 2025"
   },
   {
     type: "Policy",
     role: "Youth Councilor",
     organization: "Mayor's Youth Council Boston",
-    year: "December 2024 - now"
+    year: "December 2024 - June 2025"
   },
   {
     type: "Math",
     role: "Menezes Challenge PRIMES Circle",
     organization: "MIT",
-    year: "December 2024 - now"
+    year: "December 2024 - May 2025"
   }
 ];
-/*
-export const moreInfo = `
-  <p>For more of my work, check out my [resume](https://chat.deepseek.com/a/chat/s/709fe7e0-557a-45df-8abd-1323188a74f4)</p>
-`;*/

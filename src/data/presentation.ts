@@ -14,9 +14,8 @@ type Presentation = {
 const presentation: Presentation = {
   title: "Salma J.",
   description:
-      "I'm Salma, a junior at Boston Collegiate Charter School."
-      + " I have interests in math, computer science, physics, linguistics, design, policy... and more! " + "<br/><br/>"
-  + "More specifically, I love **photonics** and its various real-world applications, from laser surgery to space telescopes."
+      "I'm Salma, a senior at Boston Collegiate Charter School."
+      + " I've been programming for ~4 years now, and am also interested in math, physics, linguistics, and policy. I'm not sure about what I want to do in the future, but for now I've been pursuing all these interests. :)"
   + "<br/><br/> For projects I've worked on, check out my GitHub: [**@4ierseries**](https://github.com/4ierseries).",
 
 
@@ -30,7 +29,7 @@ const presentation: Presentation = {
     },
     {
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/salmaaj/",
+      link: "https://www.linkedin.com/in/4ierseries/",
     },
     {
       label: "Email",
