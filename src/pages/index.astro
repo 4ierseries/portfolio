@@ -19,16 +19,15 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
 <!-- main area. name, bio, social links -->
 <Layout>
-  <main class="flex flex-col gap-12">
+  <main class="flex flex-col gap-10">
     <article class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12">
       <div class="flex flex-col gap-8">
         <h1 class="fancy text-3xl text-neutral-100"> {presentation.title} </h1>
         <h2 class="w-auto leading-6 text" set:html={convertAsteriskToStrongTag(presentation.description)} />
-        <SocialLinks />
       </div>
     </article>
 
-    <article class="flex flex-col gap-5">
+    <article class="flex flex-col gap-4">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="fancy text-2xl text-neutral-100">Experience</h3>
       </header>
@@ -52,7 +51,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     </article> -->
 
     <!-- projects. -->
-    <article class="flex flex-col gap-8">
+    <article class="flex flex-col gap-6">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="fancy text-2xl text-neutral-100">Projects</h3>
         <Link href="/projects" label="See all projects" isUnderline target="_self" />
