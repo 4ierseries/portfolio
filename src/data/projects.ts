@@ -9,6 +9,40 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    title: "Micro:bit Capacitive Touch Alarm",
+    description: "Uses Pin P1 and iron tape as a capacitive touch sensor to trigger LEDs and a tone, which stops after ~8 seconds. Designed as the foundation for an alarm system that responds to user interaction.",
+    techs: ["Engineering", "Hardware"],
+    link: "https://github.com/4ierseries/capacitive_touch_detection",
+    hasLink: true,
+  },
+
+  {
+    title: "Binary Black Hole Merger Predictor (Harvard CfA Project)",
+    description: "Wrote Python code to analyze large-scale COSMIC simulation data and predict binary black hole mergers. Used NumPy, Pandas, and Matplotlib to filter datasets, apply astrophysical models, and visualize merger patterns across different stellar conditions.",
+    techs: ["Astrophysics", "Python", "Python"],
+    link: "",
+    hasLink: false,
+  },
+
+  {
+    title: "Counterspell Boston",
+    description: "A beginner-friendly hackathon in Boston, run in collaboration with Hack Club, with 100+ attendees at the Microsoft Innovation Center in Cambridge, MA.",
+    techs: ["Hackathon", "Event Planning"],
+    link: "https://counterspell.hackclub.com",
+    hasLink: true,
+  },
+
+
+  {
+    title: "Exploring 3-Manifolds",
+    description: "Math paper written during MIT PRIMES Circle titled “3 Manifolds”, exploring the properties and structure of three-dimensional manifolds and introducing key concepts in topology.",
+    techs: ["Math"],
+    link: "https://math.mit.edu/research/highschool/primes/circle/past-papers.html",
+    hasLink: true,
+  },
+
+
+{
     title: "TTT",
     description: "A Web3 GameFi betting platform powered by blockchain technology and smart contracts, allowing users to bet cryptocurrency in games. Won the finalist position at the EasyA x Polkadot Harvard Hackathon.",
     techs: ["Blockchain", "Polkadot.js", "Smart Contracts"],

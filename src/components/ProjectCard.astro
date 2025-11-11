@@ -12,16 +12,21 @@ const formatTechs = (values: string[]) => values.toString().replaceAll(",", " â€
             <a
                     href={link}
                     target="_blank"
-                    class="block hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300"
+                    class=""
                     rel="noopener noreferrer"
             >
-                <h3 class="text-lg font-medium">{title}</h3>
+                <div class="hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300">
+                    <h3 class="text-lg font-medium">{title}</h3>
+                </div>
                 {description && <p class="text-sm mt-2 text-neutral-400">{description}</p>}
                 <p class="text-xs text-neutral-500 mt-1">{formatTechs(techs)} â†—</p>
             </a>
         ) : (
-        <div class="hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300">
-            <h3 class="text-lg font-medium">{title}</h3>
+        <div class="">
+            <div class="hover:[&_h3]:text-[#9750d7] hover:[&_p:first-of-type]:text-neutral-100 transition-colors duration-300">
+                   <h3 class="text-lg font-medium">{title}</h3>
+            </div>
+
             {description && <p class="text-sm mt-2 text-neutral-400">{description}</p>}
             <p class="text-xs text-neutral-500 mt-1">{formatTechs(techs)}</p>
         </div>
